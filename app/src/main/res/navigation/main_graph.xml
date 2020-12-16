@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/mainCounterFragment">
+
+    <fragment
+        android:id="@+id/mainCounterFragment"
+        android:name="com.example.cornershop.ui.main.MainCounterFragment"
+        android:label="main_counter_fragment"
+        tools:layout="@layout/main_counter_fragment" >
+        <action
+            android:id="@+id/action_mainCounterFragment_to_detailCounterFragment"
+            app:destination="@id/detailCounterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailCounterFragment"
+        android:name="com.example.cornershop.ui.detail.DetailCounterFragment"
+        android:label="detail_counter_fragment"
+        tools:layout="@layout/detail_counter_fragment" />
+</navigation>
