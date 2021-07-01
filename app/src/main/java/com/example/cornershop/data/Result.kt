@@ -1,4 +1,7 @@
 package com.example.cornershop.data
 
-class Result<out T>(val value: T?, val throwable: Throwable?) {
+sealed class Resource<out T> {
+    object Loading: Resource<Nothing>()
+    data class Success<out T>(val data: T) : Resource<T>()
+    data class Failure(val exception: Exception) : Resource<Nothing>()
 }

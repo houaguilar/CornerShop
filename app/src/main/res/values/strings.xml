@@ -2,4 +2,7 @@
     <string name="app_name">CornerShop</string>
     <string name="extended_fab_content_desc">CREATE CONTADOR</string>
     <string name="extended_fab_label">CREATE CONTADOR</string>
+    <string name="title">What is the name of your counter</string>
+    <string name="create_counter">Create</string>
+    <string name="cancel">Cancel</string>
 </resources>

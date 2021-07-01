@@ -18,5 +18,18 @@
         android:id="@+id/detailCounterFragment"
         android:name="com.example.cornershop.ui.detail.DetailCounterFragment"
         android:label="detail_counter_fragment"
-        tools:layout="@layout/detail_counter_fragment" />
+        tools:layout="@layout/detail_counter_fragment" >
+        <argument
+            android:name="id"
+            app:argType="string"
+            android:defaultValue="null" />
+        <argument
+            android:name="title"
+            app:argType="string"
+            android:defaultValue="null" />
+        <argument
+            android:name="count"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
 </navigation>
